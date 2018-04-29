@@ -1,16 +1,22 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>GitHub User Finder</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-        <h1>Search GitHub Users</h1>
-        <p class="lead">Enter a username to search for a users profile info and repos</p>
-        <input type="text">
-      <br>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <title>GITHUB USER SEARCH</TITLE>
+</head>
+<body>
+  <h1>GITHUB USER SEARCH</h1>
+        <input type="text"/ id="user">
+        <input type="submit"  onclick="search()"/>
+    
+    <p id="msg" style="display:none"></p>
+    
+    <div id="userData" >
+        <h2 id="name"></h2>
+        <h5 id="bio"></h5>
+        <div id="listTitle">Public repos</div>
+        <ul id="repos"></ul>
+    </div>
+
+    <script language="JavaScript" type="text/javascript" src="index.js"></script>
+</body>
 </html>
